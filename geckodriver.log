@@ -1,0 +1,28 @@
+1643036597348	geckodriver	INFO	Listening on 127.0.0.1:57389
+1643036600413	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57390" "-no-remote" "-profile" "C:\\Users\\Ashish\\AppData\\Local\\Temp\\rust_mozprofileaTPt4h"
+1643036633032	geckodriver	INFO	Listening on 127.0.0.1:57492
+1643036636090	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57493" "-no-remote" "-profile" "C:\\Users\\Ashish\\AppData\\Local\\Temp\\rust_mozprofileEJRCYz"
+1643036636310	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Ashish\\AppData\\Local\\Temp\\rust_mozprofileEJRCYz\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57493/devtools/browser/5b49cdc5-68a3-4d08-8563-1dea201b5019
+1643036637857	Marionette	INFO	Listening on port 57498
+1643036638149	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643036645843	Marionette	INFO	Stopped listening on port 57498
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643122261993	geckodriver	INFO	Listening on 127.0.0.1:58993
+1643122265054	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58994" "-no-remote" "-profile" "C:\\Users\\Ashish\\AppData\\Local\\Temp\\rust_mozprofilehk0U74"
+1643122265658	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Ashish\\AppData\\Local\\Temp\\rust_mozprofilehk0U74\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58994/devtools/browser/7220f3fd-095c-4628-907f-5a6e1c37062e
+1643122267722	Marionette	INFO	Listening on port 58999
+1643122268233	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://z.moatads.com/omdmenadcmdisplay143662633717/moatad.js#moatClientLevel1=10929958&moatClientLevel2=27063377&moatClientLevel3=325627287&moatClientLevel4=164493283&moatClientSlicer1=6912685&zMoatENV=j, line 245: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/i8bj7ClzAoAUPYLrGgyCP56U_VUeYw5vpVcJR_BKyl0.js line 1 > eval line 5165 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1643122275662	Marionette	INFO	Stopped listening on port 58999
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
