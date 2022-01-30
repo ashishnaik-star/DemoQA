@@ -83,8 +83,14 @@ class Testelements(Baseclass):
         Ep.enter_web_tables_salary().send_keys("22000")
         Ep.enter_web_tables_department().send_keys("Accounting")
         self.driver.get_screenshot_as_file(f".\\Screenshots\\ele_wt_edit_entry.png")
-        Ep.web_table_searchbox().send_keys("Ve")
+        Ep.submit_registration_form()
+        Ep.web_table_searchbox().send_keys("Ash")
+        time.sleep(3)
         self.driver.get_screenshot_as_file(f".\\Screenshots\\ele_wt_searchbox.png")
+
+
+
+
 
 
 
