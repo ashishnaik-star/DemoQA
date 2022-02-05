@@ -37,6 +37,7 @@ class Testelementstwo(Baseclass):
         Ep2.click_upl_download()
         Ep2.upload_file().send_keys("Datas\\pexels-pixabay-65894.jpg")
         self.driver.get_screenshot_as_file(".\\Screenshots\\ele_file_upload.png")
+        # ;;;
 
 
 
