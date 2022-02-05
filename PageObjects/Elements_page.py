@@ -12,10 +12,6 @@ class elements_page:
     Ele_check_box = (By.XPATH, "// span[contains(text(), 'Check Box')]")
     Ele_radio_button = (By.XPATH, "// span[contains(text(), 'Radio Button')]")
     Ele_web_tables = (By.XPATH, "// span[contains(text(), 'Web Tables')]")
-    Ele_buttons = (By.XPATH, "// span[contains(text(), 'Buttons')]")
-    Ele_Links = (By.XPATH, "// span[contains(text(), 'Links')]")
-    Ele_broken_links = (By.XPATH, "// span[contains(text(), 'Broken Links - Images')]")
-    Ele_Upload_download = (By.XPATH, "// span[contains(text(), 'Upload and Download')]")
     Ele_Dynamic_props = (By.XPATH, "// span[contains(text(), 'Dynamic Properties')]")
     Textbox_username = (By.CSS_SELECTOR, "#userName")
     Textbox_email = (By.CSS_SELECTOR, "#userEmail")
@@ -150,6 +146,7 @@ class elements_page:
         return self.driver.find_element(*Web_tables_edit_row).click()
 
     def web_table_searchbox(self):
+        self.driver.find_element(*elements_page.Web_tables_searchbox).click()
         self.driver.find_element(*elements_page.Web_tables_searchbox).clear()
         return self.driver.find_element(*elements_page.Web_tables_searchbox)
 

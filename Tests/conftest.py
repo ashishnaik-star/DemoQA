@@ -23,6 +23,7 @@ def init_browser(request):
     driver.implicitly_wait(10)
     request.cls.driver = driver
     driver.get(Dataset.URL)
+    driver.set_page_load_timeout(20)
     yield
     driver.close()
 

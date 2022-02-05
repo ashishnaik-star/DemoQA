@@ -38,3 +38,6 @@ class Baseclass:
         elif catogary == "Permanent address":
             return str(sheet1.cell(row=4, column=2).value)
 
+    def window_change(self,windowno):
+        wh = self.driver.window_handles
+        self.driver.switch_to.window(wh[windowno])

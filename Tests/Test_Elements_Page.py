@@ -85,7 +85,6 @@ class Testelements(Baseclass):
         self.driver.get_screenshot_as_file(f".\\Screenshots\\ele_wt_edit_entry.png")
         Ep.submit_registration_form()
         Ep.web_table_searchbox().send_keys("Ash")
-        time.sleep(3)
         self.driver.get_screenshot_as_file(f".\\Screenshots\\ele_wt_searchbox.png")
 
 
