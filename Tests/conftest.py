@@ -11,6 +11,8 @@ def init_browser(request):
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--start-maximized")
         chrome_options.add_argument("ignore-certificate-errors")
+        prefs = {'download.default_directory' : '.\\Datas'}
+        chrome_options.add_experimental_option('prefs',prefs)
         s = Service(".\\DriverLocation\\chromedriver.exe")
         driver = webdriver.Chrome(service=s, options=chrome_options)
     elif browsr_name == "firefox":

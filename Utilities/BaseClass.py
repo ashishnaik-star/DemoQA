@@ -41,3 +41,15 @@ class Baseclass:
     def window_change(self,windowno):
         wh = self.driver.window_handles
         self.driver.switch_to.window(wh[windowno])
+
+    def Explicit_wait_by_visiblity(self, locator):
+        wait = WebDriverWait(self.driver, 10)
+        wait.until(expected_conditions.visibility_of_element_located(locator))
+
+    def scroll_vertical(self, y_value):
+        self.driver.execute_script(f'scrollTo(0,{y_value})')
+
+
+
+
+

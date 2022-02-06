@@ -11,7 +11,7 @@ Open up a terminal
   - git clone https://github.com/ashishnaik-star/DemoQA.git
 : Create Virtual environment
   - python3 -m venv venv
-: Enter the virtualenvironment
+: Enter the virtual environment
  - ./venv/scripts/activate.ps1
 : Install packages
  - pip3 install -r requirements.txt

@@ -18,7 +18,11 @@ class elements_page_two:
     dynamic_link = (By.XPATH, "//a[text()='Home'  and @id='dynamicLink']")
     valid_link = (By.XPATH, "// a[text() = 'Click Here for Valid Link']")
     broken_link = (By.XPATH, "// a[text() = 'Click Here for Broken Link']")
-    choose_file_upload = (By.CSS_SELECTOR,"#uploadFile")
+    choose_file_upload = (By.CSS_SELECTOR, "#uploadFile")
+    click_download_button = (By.XPATH, "//a[text()='Download']")
+    enable5_seconds_button = (By.CSS_SELECTOR, "#enableAfter")
+    color_change = (By.CSS_SELECTOR, "#colorChange")
+    visible5_seconds = (By.CSS_SELECTOR, "#visibleAfter")
 
     def __init__(self, driver):
         self.driver = driver
@@ -73,6 +77,21 @@ class elements_page_two:
 
     def upload_file(self):
         return self.driver.find_element(*elements_page_two.choose_file_upload)
+
+    def click_download(self):
+        return self.driver.find_element(*elements_page_two.click_download_button).click()
+
+    def click_dynamic_properties(self):
+        return self.driver.find_element(*elements_page_two.Ele_Dynamic_props).click()
+
+    def click_enable5_seconds(self):
+        return self.driver.find_element(*elements_page_two.enable5_seconds_button).click()
+
+    def click_color_change(self):
+        return self.driver.find_element(*elements_page_two.color_change).click()
+
+    def click_visible5_seconds(self):
+        return self.driver.find_element(*elements_page_two.visible5_seconds).click()
 
 
 

@@ -1,5 +1,7 @@
 import inspect
 import time
+from config import PROJECT_PATH
+import os
 
 from PageObjects.Elements_page_two import elements_page_two
 from PageObjects.Homepage import HomePageCls
@@ -22,7 +24,6 @@ class Testelementstwo(Baseclass):
         assert "You have done a dynamic click" == Ep2.dynamic_click_message()
         Ep2.click_links_option()
         Ep2.home_link_click()
-        time.sleep(2)
         Ep2.dynamic_link_click()
         self.window_change(2)
         self.driver.get_screenshot_as_file(".\\Screenshots\\ele_buttons_windows.png")
@@ -35,9 +36,24 @@ class Testelementstwo(Baseclass):
         self.driver.get_screenshot_as_file(".\\Screenshots\\ele_valid_links.png")
         self.driver.back()
         Ep2.click_upl_download()
-        Ep2.upload_file().send_keys("Datas\\pexels-pixabay-65894.jpg")
+        Ep2.upload_file().send_keys(os.path.join(PROJECT_PATH,"Datas\\pexels-pixabay-65894.jpg"))
         self.driver.get_screenshot_as_file(".\\Screenshots\\ele_file_upload.png")
-        # ;;;
+        Ep2.click_download()
+        self.scroll_vertical(400)
+        Ep2.click_dynamic_properties()
+        self.Explicit_wait_by_clickable(Ep2.enable5_seconds_button)
+        Ep2.click_enable5_seconds()
+        Ep2.click_color_change()
+        self.Explicit_wait_by_visiblity(Ep2.visible5_seconds)
+        Ep2.click_visible5_seconds()
+
+
+
+
+
+
+
+
 
 
 
