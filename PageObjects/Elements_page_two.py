@@ -31,7 +31,7 @@ class elements_page_two:
         self.driver.find_element(*elements_page_two.Ele_buttons).click()
 
     def buttons_double_click_me(self):
-        Act = ActionChains(driver=self.driver)
+        Act = ActionChains(self.driver)
         Act.double_click(self.driver.find_element(*elements_page_two.double_click_me)).perform()
 
     def buttons_right_click_me(self):

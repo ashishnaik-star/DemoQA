@@ -138,3 +138,47 @@
 2022-02-10 23:48:38,166 : INFO : test_widgets : Elements clicked and captured screenshots from widgets
 2022-02-10 23:48:38,382 : INFO : test_bookstoreapp : Elements clicked and captured screenshots from BookstoreApp
 2022-02-10 23:48:38,591 : INFO : test_interactions : Elements clicked and captured screenshots from interactions
+2022-02-12 00:07:16,376 : INFO : test_toolsqa_header : Page heading Refreshed successfully
+2022-02-12 00:07:16,621 : INFO : test_elements : Elements clicked and captured screenshots from home page
+2022-02-12 00:07:16,826 : INFO : test_forms : Elements clicked and captured screenshots from Forms
+2022-02-12 00:07:17,037 : INFO : test_afw : Elements clicked and captured screenshots from Alerts frames windows
+2022-02-12 00:07:17,237 : INFO : test_widgets : Elements clicked and captured screenshots from widgets
+2022-02-12 00:07:17,463 : INFO : test_bookstoreapp : Elements clicked and captured screenshots from BookstoreApp
+2022-02-12 00:07:17,663 : INFO : test_interactions : Elements clicked and captured screenshots from interactions
+2022-02-12 23:15:22,033 : INFO : test_toolsqa_header : Page heading Refreshed successfully
+2022-02-12 23:15:22,258 : INFO : test_elements : Elements clicked and captured screenshots from home page
+2022-02-12 23:15:22,433 : INFO : test_forms : Elements clicked and captured screenshots from Forms
+2022-02-12 23:15:22,616 : INFO : test_afw : Elements clicked and captured screenshots from Alerts frames windows
+2022-02-12 23:15:22,807 : INFO : test_widgets : Elements clicked and captured screenshots from widgets
+2022-02-12 23:15:23,024 : INFO : test_bookstoreapp : Elements clicked and captured screenshots from BookstoreApp
+2022-02-12 23:15:23,221 : INFO : test_interactions : Elements clicked and captured screenshots from interactions
+2022-02-13 09:52:35,725 : INFO : test_toolsqa_header : Page heading Refreshed successfully
+2022-02-13 09:52:35,976 : INFO : test_elements : Elements clicked and captured screenshots from home page
+2022-02-13 09:52:36,213 : INFO : test_forms : Elements clicked and captured screenshots from Forms
+2022-02-13 09:52:36,439 : INFO : test_afw : Elements clicked and captured screenshots from Alerts frames windows
+2022-02-13 09:52:36,651 : INFO : test_widgets : Elements clicked and captured screenshots from widgets
+2022-02-13 09:52:36,866 : INFO : test_bookstoreapp : Elements clicked and captured screenshots from BookstoreApp
+2022-02-13 09:52:37,109 : INFO : test_interactions : Elements clicked and captured screenshots from interactions
+2022-02-14 23:41:36,460 : INFO : test_afw_modal_dialogs : Record this 
+2022-02-14 23:47:02,479 : INFO : test_afw_modal_dialogs : Record this small modal issue
+2022-02-14 23:53:25,707 : INFO : test_afw_modal_dialogs : Record this- Large modal issue 
+2022-02-14 23:55:09,193 : INFO : test_afw_modal_dialogs : Record this- Large modal issue 
+2022-02-14 23:55:44,905 : INFO : test_afw_modal_dialogs : Record this small modal issue
+2022-02-14 23:56:35,552 : INFO : test_afw_modal_dialogs : Record this- Large modal issue 
+2022-02-14 23:56:57,100 : INFO : test_afw_modal_dialogs : Record this- Large modal issue 
+2022-02-15 00:05:19,364 : INFO : test_afw_modal_dialogs : Record this- Large modal issue 
+2022-02-15 16:34:02,245 : INFO : test_afw_modal_dialogs : Record this small modal issue
+2022-02-16 16:07:36,005 : INFO : test_toolsqa_header : Page heading Refreshed successfully
+2022-02-16 16:07:36,884 : INFO : test_elements : Elements clicked and captured screenshots from home page
+2022-02-16 16:07:38,738 : INFO : test_forms : Elements clicked and captured screenshots from Forms
+2022-02-16 16:07:38,982 : INFO : test_afw : Elements clicked and captured screenshots from Alerts frames windows
+2022-02-16 16:07:39,206 : INFO : test_widgets : Elements clicked and captured screenshots from widgets
+2022-02-16 16:07:39,445 : INFO : test_bookstoreapp : Elements clicked and captured screenshots from BookstoreApp
+2022-02-16 16:07:39,655 : INFO : test_interactions : Elements clicked and captured screenshots from interactions
+2022-02-16 16:33:16,007 : INFO : test_toolsqa_header : Page heading Refreshed successfully
+2022-02-16 16:33:16,741 : INFO : test_elements : Elements clicked and captured screenshots from home page
+2022-02-16 16:33:18,712 : INFO : test_forms : Elements clicked and captured screenshots from Forms
+2022-02-16 16:33:18,955 : INFO : test_afw : Elements clicked and captured screenshots from Alerts frames windows
+2022-02-16 16:33:19,180 : INFO : test_widgets : Elements clicked and captured screenshots from widgets
+2022-02-16 16:33:19,412 : INFO : test_bookstoreapp : Elements clicked and captured screenshots from BookstoreApp
+2022-02-16 16:33:19,633 : INFO : test_interactions : Elements clicked and captured screenshots from interactions

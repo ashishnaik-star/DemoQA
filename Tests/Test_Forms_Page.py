@@ -27,6 +27,7 @@ class Test_forms(Baseclass):
         self.dropdown_byvalue("Uttar Pradesh")
         Fp1.click_city()
         self.dropdown_byvalue("Agra")
+        Fp1.date_picker_click()
         self.date_picker_by_value(1, 1, 1995, Fp1.date_picker_month, Fp1.date_picker_year)
         self.driver.get_screenshot_as_file(".\\Screenshots\\Forms_entries.png")
         Fp1.click_on_submit()
