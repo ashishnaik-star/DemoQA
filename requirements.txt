@@ -1,3 +1,4 @@
-selenium
-pytest
-openpyxl
+selenium~=4.1.0
+pytest~=6.2.
+openpyxl~=3.0.9
+PyAutoGUI~=0.9.53

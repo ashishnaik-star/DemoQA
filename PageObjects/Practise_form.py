@@ -76,7 +76,7 @@ class Practise_form_po:
         return self.driver.find_element(*Practise_form_po.close_submit_form).click()
 
     def date_picker_click(self):
-        return self.driver.find_element(*Practise_form_po.date_picker)
+        return self.driver.find_element(*Practise_form_po.date_picker).click()
 
     def get_student_name(self):
         return self.driver.find_element(*Practise_form_po.student_name_entered).text

@@ -1,4 +1,5 @@
 import inspect
+import pdb
 import time
 from config import PROJECT_PATH
 import os
@@ -15,6 +16,7 @@ class Testelementstwo(Baseclass):
         Hp.Elements_homepage().click()
         Ep2 = elements_page_two(self.driver)
         Ep2.click_elements_option()
+        time.sleep(2)
         Ep2.buttons_double_click_me()
         Ep2.buttons_right_click_me()
         Ep2.buttons_dynamic_click_me()
@@ -35,6 +37,7 @@ class Testelementstwo(Baseclass):
         Ep2.click_valid_link()
         self.driver.get_screenshot_as_file(".\\Screenshots\\ele_valid_links.png")
         self.driver.back()
+        self.scroll_vertical(400)
         Ep2.click_upl_download()
         Ep2.upload_file().send_keys(os.path.join(PROJECT_PATH,"Datas\\pexels-pixabay-65894.jpg"))
         self.driver.get_screenshot_as_file(".\\Screenshots\\ele_file_upload.png")

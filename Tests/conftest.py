@@ -3,7 +3,11 @@ import time
 
 import pytest
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver import DesiredCapabilities
+from selenium.webdriver.chrome.service import Service as ChromeService, Service
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.wait import WebDriverWait
+
 from Datas.User_common_datas import Dataset
 
 driver = None
@@ -19,8 +23,11 @@ def init_browser(request):
         chrome_options.add_argument("ignore-certificate-errors")
         prefs = {'download.default_directory': '.\\Datas'}
         chrome_options.add_experimental_option('prefs', prefs)
-        s = Service(".\\DriverLocation\\chromedriver.exe")
-        driver = webdriver.Chrome(service=s, options=chrome_options)
+        caps = DesiredCapabilities().CHROME
+        caps["pageLoadStrategy"] = "none"
+        chrome_options.set_capability("goog:loggingPrefs", {'performance': 'ALL'})
+        s = ChromeService(executable_path=".\\DriverLocation\\chromedriver.exe")
+        driver = webdriver.Chrome(service=s, options=chrome_options, desired_capabilities=caps)
     elif browsr_name == "firefox":
         firefox_options = webdriver.FirefoxOptions()
         firefox_options.accept_untrusted_certs = True
@@ -47,7 +54,6 @@ def pytest_runtest_makereport(item, call):
     report = outcome.get_result()
     extra = getattr(report, "extra", [])
     if report.when == "call":
-        # always add url to report
         extra.append(pytest_html.extras.url("https://demoqa.com/"))
         xfail = hasattr(report, "wasxfail")
         if (report.skipped and xfail) or (report.failed and not xfail):
