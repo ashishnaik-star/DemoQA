@@ -1,4 +1,7 @@
 import os
+import pdb
+import time
+
 from PageObjects.Homepage import HomePageCls
 from PageObjects.Practise_form import Practise_form_po
 from Utilities.BaseClass import Baseclass
@@ -24,13 +27,14 @@ class Test_forms(Baseclass):
         self.Explicit_wait_by_clickable(Fp1.select_state)
         self.scroll_vertical(800)
         Fp1.click_state()
-        self.dropdown_byvalue("Uttar Pradesh")
+        self.dropdown_byvalue("NCR")
         Fp1.click_city()
-        self.dropdown_byvalue("Agra")
+        self.dropdown_byvalue("Delhi")
         Fp1.date_picker_click()
         self.date_picker_by_value(1, 1, 1995, Fp1.date_picker_month, Fp1.date_picker_year)
         self.driver.get_screenshot_as_file(".\\Screenshots\\Forms_entries.png")
         Fp1.click_on_submit()
+        time.sleep(1)
         student_name = Fp1.get_student_name()
         assert student_name == "Ashish Naik"
         self.driver.get_screenshot_as_file(".\\Screenshots\\Forms_entries_submit.png")

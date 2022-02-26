@@ -6,7 +6,8 @@ import time
 import pyautogui
 import pytest
 import openpyxl
-from selenium.webdriver import ActionChains, Keys
+from selenium.common.exceptions import ElementNotVisibleException, ElementNotSelectableException
+from selenium.webdriver import ActionChains, Keys, TouchActions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.select import Select
@@ -32,7 +33,7 @@ class Baseclass:
         self.driver.execute_script(f"window.scrollTo(0,{y})")
 
     def Explicit_wait_by_clickable(self, locator):
-        wait = WebDriverWait(self.driver, 10)
+        wait = WebDriverWait(self.driver, 10 , poll_frequency=1, ignored_exceptions=[ElementNotVisibleException, ElementNotSelectableException])
         wait.until(expected_conditions.element_to_be_clickable(locator))
 
     def Excel_data_drive(self, catogary):
@@ -52,7 +53,7 @@ class Baseclass:
         self.driver.switch_to.window(wh[window_no])
 
     def Explicit_wait_by_visiblity(self, locator):
-        wait = WebDriverWait(self.driver, 10)
+        wait = WebDriverWait(self.driver, 15)
         wait.until(expected_conditions.visibility_of_element_located(locator))
 
     def scroll_vertical(self, y_value):
@@ -100,41 +101,25 @@ class Baseclass:
     def date_picker_by_datetime(self, day, month, year, user_time, ele_locator):
         Act = ActionChains(self.driver)
         self.driver.find_element(*ele_locator).click()
-        # Act.key_down(Keys.CONTROL).send_keys("a").perform()
-        # Act.send_keys(Keys.BACKSPACE).perform()
         pyautogui.hotkey("ctrl","a")
         pyautogui.press("backspace")
         Act.send_keys(month+" "+str(day)+","+str(year)+" "+user_time).perform()
         Act.send_keys(Keys.ENTER).perform()
 
-    # def date_picker_by_datetime(self, day, month, year, month_locator, year_locator):
-    #     self.driver.find_element(*month_locator).click()
-    #     self.driver.find_element(By.XPATH, f"//div[text()='{str(month)}']").click()
-    #     self.driver.find_element(*year_locator).click()
-    #     try:
-    #         self.driver.find_element(By.XPATH, f"//div[text()='{str(year)}']").click()
-    #     except NoSuchElementException:
-    #         Flag = "N"
-    #         while Flag == "T":
-    #             if int(year) > 2027:
-    #                 self.driver.find_element(By.CSS_SELECTOR,
-    #                                          ".react-datepicker__navigation.react-datepicker__navigation--years.react-datepicker__navigation--years-upcoming").click()
-    #                 try:
-    #                     self.driver.find_element(By.XPATH, f"//div[text()='{str(year)}']").click()
-    #                     Flag = "T"
-    #                     print("True flagged 1")
-    #                 except NoSuchElementException:
-    #                     print("excp1 True flagged 1")
-    #                     pass
-    #             if int(year) < 2017:
-    #                 self.driver.find_element(By.CSS_SELECTOR,
-    #                                          ".react-datepicker__navigation.react-datepicker__navigation--years.react-datepicker__navigation--years-previous").click()
-    #                 try:
-    #                     self.driver.find_element(By.XPATH, f"//div[text()='{str(year)}']").click()
-    #                     Flag = "T"
-    #                     print("True flagged 2")
-    #                 except NoSuchElementException:
-    #                     pass
-    #                     print("excp1 True flagged 1")
-    #             else:
-    #                 print("Number does not exist")
+    def Select_dropdown_visible_text(self, locator, val):
+        s = Select(self.driver.find_element(*locator))
+        s.select_by_visible_text(f"{val}")
+
+    def drag_vertical_with_yaxis(self, yaxis, locator):
+        Ele = self.driver.find_element(*locator)
+        ActionChains(self.driver).click_and_hold(Ele).drag_and_drop_by_offset(Ele, 0, yaxis).perform()
+
+    def drag_vertical_with_xaxis(self, xaxis, locator):
+        Ele = self.driver.find_element(*locator)
+        ActionChains(self.driver).click_and_hold(Ele).drag_and_drop_by_offset(Ele, xaxis, 0).perform()
+
+    def drag_both_axis(self, xaxis, yaxis, locator):
+        Ele = self.driver.find_element(*locator)
+        ActionChains(self.driver).click_and_hold(Ele).drag_and_drop_by_offset(Ele, xaxis, yaxis).perform()
+
+

@@ -5,9 +5,7 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver import DesiredCapabilities
 from selenium.webdriver.chrome.service import Service as ChromeService, Service
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.wait import WebDriverWait
-
+from selenium.webdriver.chrome.options import Options
 from Datas.User_common_datas import Dataset
 
 driver = None
@@ -23,11 +21,17 @@ def init_browser(request):
         chrome_options.add_argument("ignore-certificate-errors")
         prefs = {'download.default_directory': '.\\Datas'}
         chrome_options.add_experimental_option('prefs', prefs)
+        chrome_options.add_extension('.\\Datas\\extension_3_12_0_0.crx')
         caps = DesiredCapabilities().CHROME
         caps["pageLoadStrategy"] = "none"
         chrome_options.set_capability("goog:loggingPrefs", {'performance': 'ALL'})
         s = ChromeService(executable_path=".\\DriverLocation\\chromedriver.exe")
         driver = webdriver.Chrome(service=s, options=chrome_options, desired_capabilities=caps)
+        Wh = driver.window_handles
+        time.sleep(8)
+        driver.switch_to.window(Wh[0])
+        driver.close()
+        driver.switch_to.window(Wh[1])
     elif browsr_name == "firefox":
         firefox_options = webdriver.FirefoxOptions()
         firefox_options.accept_untrusted_certs = True

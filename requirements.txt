@@ -1,4 +1,4 @@
 selenium~=4.1.0
-pytest~=6.2.
+pytest~=6.2.5
 openpyxl~=3.0.9
 PyAutoGUI~=0.9.53
