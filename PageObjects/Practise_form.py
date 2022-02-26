@@ -6,8 +6,9 @@ from selenium.webdriver.common.by import By
 
 class Practise_form_po:
 
-    Forms_click_expand = (By.XPATH,"//div[@class='accordion']/div[2]/span/div/div[2]")
-    practise_form_click = (By.XPATH,"//span[text()='Practice Form']")
+    Forms_click_expand = (By.XPATH, "//div[@class='accordion']/div[2]/span/div/div[2]")
+    practise_form_click = (By.XPATH, "//span[text()='Practice Form']")
+    resizable_interactions_click = (By.XPATH, "//span[text()='Resizable']")
     enter_first_name = (By.CSS_SELECTOR,"#firstName")
     enter_last_name = (By.CSS_SELECTOR, "#lastName")
     radio_button_gender_female = (By.XPATH, "//label[@for='gender-radio-2']")
@@ -80,5 +81,6 @@ class Practise_form_po:
 
     def get_student_name(self):
         return self.driver.find_element(*Practise_form_po.student_name_entered).text
+
 
 

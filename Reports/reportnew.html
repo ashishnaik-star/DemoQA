@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>DEMO QA REPORT!</h1>
-    <p>Report generated on 16-Feb-2022 at 16:33:41 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 26-Feb-2022 at 12:02:26 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -266,13 +266,13 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Windows-10-10.0.19043-SP0</td></tr>
       <tr>
         <td>Plugins</td>
-        <td>{"base-url": "1.4.2", "html": "3.1.1", "metadata": "1.11.0", "selenium": "2.0.1", "variables": "1.9.0"}</td></tr>
+        <td>{"base-url": "1.4.2", "forked": "1.4.0", "html": "3.1.1", "metadata": "1.11.0", "selenium": "2.0.1", "variables": "1.9.0", "xdist": "2.5.0"}</td></tr>
       <tr>
         <td>Python</td>
         <td>3.9.5</td></tr></table>
     <h2>Summary</h2>
-    <p>21 tests ran in 97.47 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">21 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>35 tests ran in 217.00 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">34 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -283,11 +283,21 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">Tests/Test_Forms_Page.py::Test_forms::test_practise_form</td>
+          <td class="col-duration">19.62</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div><div><img src="1645857051125.png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Alert_Frame_Windows.py::Test_afw::test_afw_browser_windows</td>
-          <td class="col-duration">5.52</td>
+          <td class="col-duration">14.16</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -296,7 +306,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Alert_Frame_Windows.py::Test_afw::test_afw_alerts</td>
-          <td class="col-duration">5.27</td>
+          <td class="col-duration">5.73</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -305,7 +315,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Alert_Frame_Windows.py::Test_afw::test_afw_frames</td>
-          <td class="col-duration">2.17</td>
+          <td class="col-duration">2.47</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -314,7 +324,34 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Alert_Frame_Windows.py::Test_afw::test_afw_modal_dialogs</td>
-          <td class="col-duration">5.00</td>
+          <td class="col-duration">1.63</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Book_Store_App.py::Test_interactions::test_login[ashish-naik]</td>
+          <td class="col-duration">22.94</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Book_Store_App.py::Test_interactions::test_login[Ashishnaik123-Ashish44!]</td>
+          <td class="col-duration">0.10</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Book_Store_App.py::Test_interactions::test_book_store</td>
+          <td class="col-duration">7.77</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -323,7 +360,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Elements_Page.py::Testelements::test_elements_page_expand</td>
-          <td class="col-duration">4.85</td>
+          <td class="col-duration">13.22</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -332,7 +369,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Elements_Page.py::Testelements::test_elements_textBox</td>
-          <td class="col-duration">0.70</td>
+          <td class="col-duration">0.66</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -341,7 +378,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Elements_Page.py::Testelements::test_elements_CheckBox</td>
-          <td class="col-duration">0.71</td>
+          <td class="col-duration">1.45</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -350,7 +387,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Elements_Page.py::Testelements::test_elements_radiobutton</td>
-          <td class="col-duration">0.11</td>
+          <td class="col-duration">0.64</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -359,7 +396,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Elements_Page.py::Testelements::test_elements_webtables</td>
-          <td class="col-duration">8.29</td>
+          <td class="col-duration">4.65</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -368,16 +405,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Elements_Page_two.py::Testelementstwo::test_elements_buttons</td>
-          <td class="col-duration">18.26</td>
-          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Tests/Test_Forms_Page.py::Test_forms::test_practise_form</td>
-          <td class="col-duration">15.93</td>
+          <td class="col-duration">26.62</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -386,7 +414,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Homepage.py::Test_Homepage::test_toolsqa_header</td>
-          <td class="col-duration">4.76</td>
+          <td class="col-duration">11.26</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -395,7 +423,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Homepage.py::Test_Homepage::test_elements</td>
-          <td class="col-duration">0.74</td>
+          <td class="col-duration">0.26</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -404,7 +432,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Homepage.py::Test_Homepage::test_forms</td>
-          <td class="col-duration">1.96</td>
+          <td class="col-duration">0.30</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -413,7 +441,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Homepage.py::Test_Homepage::test_afw</td>
-          <td class="col-duration">0.23</td>
+          <td class="col-duration">0.27</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -422,7 +450,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Homepage.py::Test_Homepage::test_widgets</td>
-          <td class="col-duration">0.22</td>
+          <td class="col-duration">0.26</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -431,7 +459,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Homepage.py::Test_Homepage::test_bookstoreapp</td>
-          <td class="col-duration">0.23</td>
+          <td class="col-duration">0.27</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -440,7 +468,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Homepage.py::Test_Homepage::test_interactions</td>
-          <td class="col-duration">4.34</td>
+          <td class="col-duration">0.85</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -448,8 +476,53 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">Tests/Test_Widgets_Page.py::Test_widgets::test_afw_browser_windows</td>
-          <td class="col-duration">8.62</td>
+          <td class="col-name">Tests/Test_Interactions_Page.py::Test_interactions::test_interactions_sortable</td>
+          <td class="col-duration">14.29</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Interactions_Page.py::Test_interactions::test_interactions_selectable</td>
+          <td class="col-duration">3.22</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Interactions_Page.py::Test_interactions::test_interactions_resizable</td>
+          <td class="col-duration">2.90</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Interactions_Page.py::Test_interactions::test_interactions_droppable</td>
+          <td class="col-duration">8.29</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Interactions_Page.py::Test_interactions::test_interactions_dragabble</td>
+          <td class="col-duration">8.00</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Widgets_Page.py::Test_widgets::test_widgets_accordian</td>
+          <td class="col-duration">16.29</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -458,7 +531,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Widgets_Page.py::Test_widgets::test_auto_complete_widgets</td>
-          <td class="col-duration">4.23</td>
+          <td class="col-duration">5.25</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -467,7 +540,61 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/Test_Widgets_Page.py::Test_widgets::test_date_picker</td>
-          <td class="col-duration">4.88</td>
+          <td class="col-duration">1.77</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Widgets_Page.py::Test_widgets::test_slider</td>
+          <td class="col-duration">0.79</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Widgets_Page.py::Test_widgets::test_progress_bar</td>
+          <td class="col-duration">11.20</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Widgets_Page.py::Test_widgets::test_widgets_tabs</td>
+          <td class="col-duration">0.67</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Widgets_Page.py::Test_widgets::test_widgets_tool_tips</td>
+          <td class="col-duration">2.89</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Widgets_Page.py::Test_widgets::test_widgets_menu</td>
+          <td class="col-duration">1.49</td>
+          <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/Test_Widgets_Page.py::Test_widgets::test_widget_menu</td>
+          <td class="col-duration">4.21</td>
           <td class="col-links"><a class="url" href="https://demoqa.com/" target="_blank">URL</a> </td></tr>
         <tr>
           <td class="extra" colspan="4">
